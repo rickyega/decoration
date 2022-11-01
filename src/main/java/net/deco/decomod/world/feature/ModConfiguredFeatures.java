@@ -3,12 +3,14 @@ package net.deco.decomod.world.feature;
 import net.deco.decomod.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
@@ -36,5 +38,9 @@ public class ModConfiguredFeatures {
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(PINK_CHECKED,
                             0.5F)), PINK_CHECKED));
 
+    public static final List<OreConfiguration.TargetBlockState> NETHER_HELLSTONE_ORES = List.of(
+            OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.HELLSTONE_ORE.get().defaultBlockState()));
 
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> HELLSTONE_ORE = FeatureUtils.register("hellstone_ore",
+            Feature.ORE, new OreConfiguration(NETHER_HELLSTONE_ORES, 3));
 }
