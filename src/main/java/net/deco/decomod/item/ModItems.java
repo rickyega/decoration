@@ -2,6 +2,7 @@ package net.deco.decomod.item;
 
 import net.deco.decomod.DecoMod;
 import net.deco.decomod.item.custom.FireSwordItem;
+import net.deco.decomod.item.custom.ModArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,7 +33,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.MOD_TAB).fireResistant()));
 
     public static final RegistryObject<Item> HELLSTONE_HELMET = ITEMS.register("hellstone_helmet",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.HEAD,
+            () -> new ModArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
     public static final RegistryObject<Item> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.CHEST,
