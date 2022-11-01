@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "legendmod:block/hell_furnace_top",
+    "front": "legendmod:block/hell_furnace_front_on",
+    "side": "legendmod:block/hell_furnace_side"
+  }
+}
