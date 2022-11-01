@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "decomod:hellstone_raw"
+  },
+  "result": "decomod:hellstone_ingot",
+  "experience": 0.35,
+  "cookingtime": 200
+}

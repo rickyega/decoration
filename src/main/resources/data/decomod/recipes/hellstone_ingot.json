@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "hellstone_ingot",
+  "ingredients": [
+    {
+      "item": "decomod:hellstone_block"
+    }
+  ],
+  "result": {
+    "item": "decomod:hellstone_ingot",
+    "count": 9
+  }
+}
