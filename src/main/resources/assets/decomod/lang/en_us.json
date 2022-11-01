@@ -1,8 +1,13 @@
 {
   "itemGroup.mod_tab": "Mod Tab",
 
+  "item.decomod.cucumber": "Cucumber",
+
   "item.decomod.hellstone_raw": "Hellstone Raw",
   "item.decomod.hellstone_ingot": "Hellstone Ingot",
   "block.decomod.hellstone_ore": "Hellstone Ore",
-  "block.decomod.hellstone_block": "Hellstone Block"
+  "block.decomod.hellstone_block": "Hellstone Block",
+  "item.decomod.hellstone_axe": "Hellstone Axe",
+  "item.decomod.hellstone_pickaxe": "Hellstone Pickaxe",
+  "item.decomod.hellstone_sword": "Hellstone sword"
 }
