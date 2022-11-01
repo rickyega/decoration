@@ -1,4 +1,8 @@
 {
+  "itemGroup.mod_tab": "Mod Tab",
+
   "item.decomod.hellstone_raw": "Hellstone Raw",
-  "item.decomod.hellstone_ingot": "Hellstone Ingot"
+  "item.decomod.hellstone_ingot": "Hellstone Ingot",
+  "block.decomod.hellstone_ore": "Hellstone Ore",
+  "block.decomod.hellstone_block": "Hellstone Block"
 }

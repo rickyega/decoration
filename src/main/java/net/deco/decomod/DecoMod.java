@@ -1,5 +1,6 @@
 package net.deco.decomod;
 
+import net.deco.decomod.block.ModBlocks;
 import net.deco.decomod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -29,6 +30,7 @@ public class DecoMod {
     public DecoMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
