@@ -1,6 +1,7 @@
 package net.deco.decomod.item;
 
 import net.deco.decomod.DecoMod;
+import net.deco.decomod.item.custom.FireSwordItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,7 +21,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOD_TAB).food(ModFoods.CUCUMBER)));
 
     public static final RegistryObject<Item> HELLSTONE_SWORD = ITEMS.register("hellstone_sword",
-            () -> new SwordItem(ModTiers.HELLSTONE, 2, 3f,
+            () -> new FireSwordItem(ModTiers.HELLSTONE, 2, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.MOD_TAB).fireResistant()));
     public static final RegistryObject<Item> HELLSTONE_PICKAXE = ITEMS.register("hellstone_pickaxe",
             () -> new PickaxeItem(ModTiers.HELLSTONE, 1, 1f,
