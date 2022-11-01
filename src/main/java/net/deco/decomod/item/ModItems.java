@@ -2,6 +2,7 @@ package net.deco.decomod.item;
 
 import net.deco.decomod.DecoMod;
 import net.deco.decomod.item.custom.FireSwordItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,6 +30,19 @@ public class ModItems {
     public static final RegistryObject<Item> HELLSTONE_AXE = ITEMS.register("hellstone_axe",
             () -> new AxeItem(ModTiers.HELLSTONE, 4, 0f,
                     new Item.Properties().tab(ModCreativeModeTab.MOD_TAB).fireResistant()));
+
+    public static final RegistryObject<Item> HELLSTONE_HELMET = ITEMS.register("hellstone_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
+    public static final RegistryObject<Item> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
+    public static final RegistryObject<Item> HELLSTONE_LEGGING = ITEMS.register("hellstone_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
+    public static final RegistryObject<Item> HELLSTONE_BOOTS = ITEMS.register("hellstone_boots",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

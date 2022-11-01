@@ -9,5 +9,9 @@
   "block.decomod.hellstone_block": "Hellstone Block",
   "item.decomod.hellstone_axe": "Hellstone Axe",
   "item.decomod.hellstone_pickaxe": "Hellstone Pickaxe",
-  "item.decomod.hellstone_sword": "Hellstone sword"
+  "item.decomod.hellstone_sword": "Hellstone sword",
+  "item.decomod.hellstone_helmet": "Fire Helmet",
+  "item.decomod.hellstone_chestplate": "Fire Chestplate",
+  "item.decomod.hellstone_leggings": "Fire Leggings",
+  "item.decomod.hellstone_boots": "Fire Boots"
 }
